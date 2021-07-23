@@ -11,6 +11,13 @@
 
 /*
  * Function that take two variables by reference and swap them.
+ *
+ * Parameters:
+ *
+ * a: first number
+ * b: second number
+ *
+ * Returns: nothing.
 */ 
 void swap(int *a, int *b) {
     (*a) += (*b);

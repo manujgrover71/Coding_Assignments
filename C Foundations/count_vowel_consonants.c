@@ -12,6 +12,11 @@
 
 /*
  * Function that returns whether a character is vowel or not.
+ * 
+ * Parameters:
+ * ch: character to be checked for vowel.
+ *
+ * Returns: 1 if ch is vowel, 0 otherwise.
 */
 int isVowel(char ch) {
     // if character is uppercase, convert it to lowercase.
