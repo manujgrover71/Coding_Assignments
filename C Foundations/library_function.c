@@ -137,14 +137,17 @@ int main() {
     char s[100];
     char t[100];
     
+    // testing strncpy function
     scanf("%s", t);
     strncpy(s, t, 10);
     printf("%s\n", s);
     
+    // testing strncat function
     scanf("%s %s", s, t);
     strncat(s, t, 5);
     printf("%s\n", s);
     
+    // testing strncmp function
     scanf("%s %s", s, t);
     int res = strncmp(s, t, 5);
     
