@@ -22,8 +22,8 @@ int getLen(char *str) {
     int len = 0;
 
     while(*str != '\0') {
-	len++;
-	str++;
+        len++;
+        str++;
     }
 
     return len;

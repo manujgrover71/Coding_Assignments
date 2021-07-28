@@ -6,7 +6,6 @@
  *
  * @author: Manuj Grover, @Roll_Number: 1910990170
  * Date: 24/07/2021
- *
 */
 #include <stdio.h>
 
