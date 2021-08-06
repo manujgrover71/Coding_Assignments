@@ -24,18 +24,19 @@ void fib(int n) {
     int c;
     
     // limit till fibonacci series is calculated.
-    int count = 0;
+    int count = 2;
     
     // calculating using the relation: fib[i] = fib[i - 1] + fib[i - 2];
-    while(count < n) {
+    while(n) {
         c = a + b;
         a = b;
         b = c;
         
-        if((i + 1) % 3 == 0) {
+        if((count + 1) % 3 == 0) {
             printf("%d ", c);
-            count++;
+            n--;
         }
+        count++;
     }
 }
 
