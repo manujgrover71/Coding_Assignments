@@ -1,8 +1,9 @@
 # Mint (Modular Int)
-Mint is a static C library which mimics the primary data type integer in C but all the operations on the mint are done with respect to a modulo value.
+Mint is a C helper file which mimics the primary data type integer in C but all the operations on the mint are done with respect to a modulo value.
 
 ## Specifications
-- Mint.c is the static library file, just import the file in your project and enjoy all the features :rocket:
+- Mint.h is the header file containing all the declarations, just import the file in your project and enjoy all the features :rocket:
+- Mint.c is file which contains all the implementation of functions.
 
 ## Setup
 Clone the repository.
@@ -13,9 +14,17 @@ Create a new C file in desired directory.
 ```shell
 touch test.c
 ```
-Import the Mint.c file into your C file.
+Import the Mint.h file into your C file.
 ```c
-#import "Mint.c"
+#import "Mint.h"
+```
+Compiler the program using GCC.
+```shell
+gcc mint.c test.c
+```
+Run the executable
+```shell
+./a.out
 ```
 
 ## Instance variables
@@ -58,7 +67,11 @@ add(a, 100);
 | void | Subtract | `subtract(struct mint &this, int b)` | Subtract integer b from mint variable |
 | void | Multiply | `mutliply(struct mint &this, int b)` | Multiply integer b to mint variable |
 | void | Divide | `divide(struct mint &this, int b)` | Divide mint variable by integer b |
-| int / mint | GCD | `gcd(struct mint &a, int b)` | Returns the gcd of mint value and integer b |
+| void | Mod Inverse | `mod_inverse(struct mint &a)` | Calculate the mod inverse value of mint using the mint's modulo value (The modulo value must be a prime.) |
 | int | Equals | `equals(struct mint &this, int b)` | Checks whether mint variable value is same as integer b <br>(with or without modulo operation) |
 
 __more coming soon...__
+
+> Note: All the function can be used with two mints as parameters by using the same functions prefixes ending with "_mm"<br>
+> Example: add_mm(struct mint &a, struct mint &b)
+
