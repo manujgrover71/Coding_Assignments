@@ -12,7 +12,7 @@
  * Function that returns the pow(x, y) with modulo m.
  */
 int power_helper(int x, int y, int m) {
-    long long res = 0;
+    long long res = 1;
     while(y > 0) {
         if(y & 1) res = (res * x) % m;
         y >>= 1;
